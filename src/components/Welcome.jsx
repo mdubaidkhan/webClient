@@ -23,11 +23,11 @@ export default function Welcome() {
 }
 
 const Container = styled.div`
-  margin-left:1000px;
+ 
   justify-content: center;
   align-items: center;
   color: white;
-  flex-direction: column;
+  
   img {
     height: 20rem;
   }
