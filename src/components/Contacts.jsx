@@ -67,7 +67,7 @@ export default function Contacts({ contacts, changeChat }) {
   );
 }
 const Container = styled.div`
-   margin-left:1000px;
+ 
   display: grid;
   grid-template-rows: 10% 75% 15%;
   overflow: hidden;
