@@ -77,6 +77,7 @@ const Container = styled.div`
   background-color: #131324;
   .contac{
   width:50vw;
+  background-color:red;
   }
   .container {
     height: 85vh;
