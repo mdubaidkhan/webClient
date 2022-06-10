@@ -53,9 +53,10 @@ export default function Chat() {
     <>
       <Container>
         <div className="container">
-          <Contacts className="contac"contacts={contacts} changeChat={handleChatChange} />
+          
           {currentChat === undefined ? (
            <Welcome />
+    <Contacts contacts={contacts} changeChat={handleChatChange} />
           ) : (
             <ChatContainer currentChat={currentChat} socket={socket} />
           )}
@@ -75,10 +76,7 @@ const Container = styled.div`
   gap: 1rem;
   align-items: center;
   background-color: #131324;
-  .contac{
-  width:50vw;
-  background-color:red;
-  }
+ 
   .container {
     height: 85vh;
     width: 85vw;
