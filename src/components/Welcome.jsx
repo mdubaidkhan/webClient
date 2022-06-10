@@ -23,7 +23,8 @@ export default function Welcome() {
 }
 
 const Container = styled.div`
-display: relative
+width:100px;
+display:flex
  flex-direction: column;
   justify-content: center;
   align-items: center;
