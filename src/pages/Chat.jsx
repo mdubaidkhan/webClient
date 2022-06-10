@@ -56,7 +56,7 @@ export default function Chat() {
           
           {currentChat === undefined ? (
            <Welcome />
-    <Contacts contacts={contacts} changeChat={handleChatChange} />
+    <Contacts contacts={contacts} changeChat={handleChatChange} ><Contacts />
           ) : (
             <ChatContainer currentChat={currentChat} socket={socket} />
           )}
