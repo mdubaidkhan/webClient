@@ -23,13 +23,13 @@ export default function Welcome() {
 }
 
 const Container = styled.div`
-  display: flex;
+
   justify-content: center;
   align-items: center;
   color: white;
   flex-direction: column;
   img {
-    height: 100rem;
+    height: 20rem;
   }
   span {
     color: #4e0eff;
