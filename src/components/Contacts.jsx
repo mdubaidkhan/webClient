@@ -69,7 +69,7 @@ export default function Contacts({ contacts, changeChat }) {
 const Container = styled.div`
   display: grid;
   grid-template-rows: 10% 75% 15%;
-  overflow: hidden;
+ 
   background-color: #080420;
   .brand {
     display: flex;
