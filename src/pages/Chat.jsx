@@ -67,7 +67,7 @@ export default function Chat() {
 
 const Container = styled.div`
 
-  height: 100vh;
+  height: 1000vh;
   width: 100vw;
   display: flex;
   flex-direction: colomn;
