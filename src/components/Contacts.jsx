@@ -28,7 +28,7 @@ export default function Contacts({ contacts, changeChat }) {
             <h3>snappy</h3>
           </div>
      <div className="contacts">
-            {contacts.map((contact, index) => {
+            
               return (
                 <div
                   key={contact._id}
@@ -63,7 +63,7 @@ export default function Contacts({ contacts, changeChat }) {
             </div>
           </div>
         </Container>
-      )}
+      
     </>
   );
 }
