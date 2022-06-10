@@ -52,12 +52,9 @@ export default function Chat() {
   return (
     <>
       <Container>
+      <Contacts contacts={contacts} changeChat={handleChatChange} />
         <div className="container">
-          <div>
-    
-     <h1>"ubaid sama" </h1>
-    <Contacts contacts={contacts} changeChat={handleChatChange} />
-            </div>
+           <Contacts contacts={contacts} changeChat={handleChatChange} />
           {currentChat === undefined ? (
            <Welcome />
     
