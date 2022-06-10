@@ -70,7 +70,7 @@ const Container = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   gap: 1rem;
   align-items: center;
