@@ -6,14 +6,14 @@ export default function Contacts({ contacts, changeChat }) {
   const [currentUserName, setCurrentUserName] = useState(undefined);
   const [currentUserImage, setCurrentUserImage] = useState(undefined);
   const [currentSelected, setCurrentSelected] = useState(undefined);
-  useEffect( () => {
-    async function fetchData(){
+  useEffect( async() => {
+    
     const data = await JSON.parse(
       localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
     );
     setCurrentUserName(data.username);
     setCurrentUserImage(data.avatarImage);
-  }
+  
   }, []);
   const changeCurrentChat = (index, contact) => {
     setCurrentSelected(index);
@@ -21,14 +21,14 @@ export default function Contacts({ contacts, changeChat }) {
   };
   return (
     <>
-      {currentUserImage && currentUserImage && (
+     
         <Container>
           <div className="brand">
             <img src={Logo} alt="logo" />
             <h3>snappy</h3>
           </div>
-     <div className="contacts">
-            
+          <div className="contacts">
+            {contacts.map((contact, index) => {
               return (
                 <div
                   key={contact._id}
@@ -50,7 +50,6 @@ export default function Contacts({ contacts, changeChat }) {
               );
             })}
           </div>
-         
           <div className="current-user">
             <div className="avatar">
               <img
@@ -63,12 +62,10 @@ export default function Contacts({ contacts, changeChat }) {
             </div>
           </div>
         </Container>
-      
     </>
   );
 }
 const Container = styled.div`
- 
   display: grid;
   grid-template-rows: 10% 75% 15%;
   overflow: hidden;
