@@ -53,7 +53,7 @@ export default function Chat() {
     <>
       <Container>
         <div className="container">
-          <Contacts contacts={contacts} changeChat={handleChatChange} />
+          <Contacts className="contac"contacts={contacts} changeChat={handleChatChange} />
           {currentChat === undefined ? (
            <Welcome />
           ) : (
@@ -75,6 +75,9 @@ const Container = styled.div`
   gap: 1rem;
   align-items: center;
   background-color: #131324;
+  .contac{
+  width:50vw;
+  }
   .container {
     height: 85vh;
     width: 85vw;
