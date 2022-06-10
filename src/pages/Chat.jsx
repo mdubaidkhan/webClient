@@ -53,14 +53,16 @@ export default function Chat() {
     <>
       <Container>
         <div className="container">
-          
+          <div>
+     <h1>"ubaid sama" </h1>
+            </div>
           {currentChat === undefined ? (
            <Welcome />
     
           ) : (
             <ChatContainer currentChat={currentChat} socket={socket} />
           )}
-          <Contacts contacts={contacts} changeChat={handleChatChange} />
+          
         </div>
       </Container>
     </>
